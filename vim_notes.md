@@ -87,6 +87,21 @@ This is a collection of vim notes.
 * `3x`  = delete 3 characters.
 * `3s`  = substitute 3 characters.
 
+## Folding
+
+* `:set foldmethod=syntax` fold by syntax definitions.
+* `:set foldmethod=indent` fold by indentation.
+* `zc`	Close the current fold
+* `zo`	Open the current fold
+* `zM`	Close all folds
+* `zr`	Open one level of folds
+* `zR`	Open all folds
+* `zj`	Move to the next fold
+* `zk`	Move to the previous fold
+* `zm`	Close one level of folds
+* `zn`	Disable folding
+* `zN`	Re-enable folding
+
 ## Useful programmer commands
 
 * `r` replace one character (e.g. rd replaces the current char with d).
