@@ -46,3 +46,8 @@ This is a collection of bash notes.
 
 * `sed 's/<oldstring>/<newstri ng>/g'` Replace string in a file
 * `sed -i '1i\Your text go here' /etc/hosts` Add first line to text file
+
+## Zip & Unzip
+
+* `tar -jxvf filename.tar.bz2` To extract a tar.bz2 file
+* `tar -zxvf filename.tar.gz` To extract a tar.gz file
