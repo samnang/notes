@@ -25,7 +25,7 @@ This is a collection of bash notes.
 ## Finding
 
 * `find . -type f -name "*~" -exec rm -f {} \;` Remove all matched files under a directory by matching/searching 
-* `grep -lr -e 'old_text' * | xargs sed -i 's/old_text/new_text/g'` Find and replace text in all files under a directory
+* `grep -lr -e --exclude-dir=log --exclude=tags 'old_text' * | xargs sed -i 's/old_text/new_text/g'` Find and replace text in all files under a directory
 
 ## Process
 * `ps aux`
@@ -51,3 +51,13 @@ This is a collection of bash notes.
 
 * `tar -jxvf filename.tar.bz2` To extract a tar.bz2 file
 * `tar -zxvf filename.tar.gz` To extract a tar.gz file
+
+## Free up Memory
+
+* `sudo sync; echo 3 | sudo tee /proc/sys/vm/drop_caches > /dev/null`
+
+## Download or Upload File/Directory
+* `scp user@mydomain.com:~/myfile ~/myfile` Download file
+* `scp -r user@mydomain.com:~/mydir ~/` Download directory
+* `scp myfile user@mydomain.com:~/myfile` Upload file
+* `scp -r ~/mydir user@mydomain.com:~/` Upload directory

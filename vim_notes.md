@@ -111,6 +111,12 @@ This is a collection of vim notes.
 * `.` repeat last command (a simple macro)
 * `=` indent line (specify a range, or use visual mode)
 
+## Buffers
+* `bufdo` Refresh all files in buffer from disk.
+
+## Write file readonly
+* `w !sudo tee %`
+
 ## Macro recording
 
 * Press `q[` key `]` to start recording.
