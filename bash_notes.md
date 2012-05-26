@@ -61,3 +61,6 @@ This is a collection of bash notes.
 * `scp -r user@mydomain.com:~/mydir ~/` Download directory
 * `scp myfile user@mydomain.com:~/myfile` Upload file
 * `scp -r ~/mydir user@mydomain.com:~/` Upload directory
+
+## SSH
+* `cat ~/.ssh/id_rsa.pub | ssh root@example.com 'cat - >> ~/.ssh/authorized_keys'`
