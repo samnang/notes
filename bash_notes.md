@@ -64,3 +64,6 @@ This is a collection of bash notes.
 
 ## SSH
 * `cat ~/.ssh/id_rsa.pub | ssh root@example.com 'cat - >> ~/.ssh/authorized_keys'`
+
+## S3 Sync
+* `s3cmd sync --delete-removed --acl-public s3://admon/brands s3://admon-dev/`
