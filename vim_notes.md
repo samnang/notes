@@ -47,6 +47,12 @@ This is a collection of vim notes.
 * `:s/text/other/` Replace 'text' by 'other' in the current line. Actually, any character can be used instead of '/', like 's.7/11/2010.11/7/2010.'
 * `:'<,'>s/text/other/` Replace 'text' by 'other' in the last visual selection. '< and '> are the markers for the beginning and ending of the visual selection. Pressing ':' while on visual mode, these markers are automatically inserted in the command line.
 * `&` repeat last substitution command
+* Multiple files
+
+  ```
+  :args ./**/*.rb
+  :argdo :%s/_params/params/ge | update
+  ```
 
 ## Quick editing commands
 
